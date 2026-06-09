@@ -160,7 +160,9 @@ const downloadPDF = async () => {
                         : "bg-[var(--bg-secondary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]"
                     }`}
                   >
-                    <t.icon className="w-3.5 h-3.5" />
+                   /* <t.icon className="w-3.5 h-3.5" /> */
+
+                    
                     {t.label}
                   </button>
                 ))}
