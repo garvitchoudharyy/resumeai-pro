@@ -29,17 +29,6 @@ const tabs = [
   { id: "certifications", label: "Certifications", icon: Award },
 ];
 
-function uid() { return Math.random().toString(36).slice(2, 9); }
-
-const tabs = [
-  { id: "personal", label: "Personal", icon: User },
-  { id: "experience", label: "Experience", icon: Briefcase },
-  { id: "education", label: "Education", icon: GraduationCap },
-  { id: "skills", label: "Skills", icon: Code },
-  { id: "projects", label: "Projects", icon: Code },
-  { id: "certifications", label: "Certifications", icon: Award },
-];
-
 export default function ResumeBuilderPage() {
   const [resume, setResume] = useState<ResumeData>(defaultResume);
   const [activeTab, setActiveTab] = useState("personal");
@@ -505,4 +494,4 @@ function Section({ title, children }: { title: string; children: React.ReactNode
     </div>
   );
 }
-    setResume(r => ({ ...r, experience: r.experience.map(e => e.id === id ? { ...e, [field]: value } : e) }));
+    
