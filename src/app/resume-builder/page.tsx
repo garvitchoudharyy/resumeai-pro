@@ -132,7 +132,7 @@ const downloadPDF = async () => {
             <Button variant="secondary" size="sm" onClick={() => setPreview(!preview)}>
               <Eye className="w-4 h-4" /> {preview ? "Edit" : "Preview"}
             </Button>
-            <Button variant="secondary" size="sm" onClick={save} loading={saving}>
+            <Button variant="secondary" size="sm" onClick={() => {}} loading={saving}>
               <Save className="w-4 h-4" /> Save
             </Button>
             <Button variant="gradient" size="sm" onClick={downloadPDF} loading={downloading}>
